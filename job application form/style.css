@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(193, 187, 187);
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.sec-cont{
+    width: 600px;
+    margin: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px 4px rgb(121, 120, 120);
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-size: medium;
+    background-color: #fffdfd;
+}
+#application form{
+    display: grid;
+    /* width: 600px; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#application div{
+    display: flex;
+    flex-direction: column;
+}
+#application .addressbox{
+    flex-direction: column;
+    /* align-items: flex-end; */
+    grid-column: 1/ span 2;
+}
+#application .addressbox textarea{
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: gray;
+    border-radius: 3px;
+    border: 1px solid rgb(223, 217, 217);
+}
+#application .addressbox textarea:focus{
+    border: 2px solid red;
+}
+select{
+    height: 32px;
+    border: 1px solid rgb(236, 231, 231);
+    padding-left: 9px;
+}
+input{
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(236, 231, 231);
+    padding: 10px;
+    font-size: medium;
+}
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+}
+#btn input{
+    height: 8px;
+    /* width: 95px; */
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: small;
+    color: white;
+    background-color: red;
+    border-radius: 7px;
+}
+*:focus{
+    /* border: none; */
+    outline: 0px;
+}
+input:focus{
+    border: 2px solid red;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+/* media-queries */
+
+@media (max-width: 630px){
+    .boxes{
+        grid-column: 1/ span 2;
+    }
+    /* .addressbox{
+        width: 200px;
+    } */
+}
